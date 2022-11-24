@@ -5,24 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="417240e1-2128-4380-b0b5-fa0bdab4597f" name="Changes" comment="first">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/hoitan/HibernateRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/hoitan/converter/BirthdayConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/hoitan/entity/Birthday.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/hoitan/entity/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/hoitan/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/by/hoitan/HibernateRunnerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/hoitan/HibernateRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/hoitan/HibernateRunner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,8 +89,23 @@
       <option name="presentableId" value="Default" />
       <updated>1669228326913</updated>
       <workItem from="1669228328485" duration="6616000" />
-      <workItem from="1669284801465" duration="5743000" />
+      <workItem from="1669284801465" duration="6332000" />
     </task>
+    <task id="LOCAL-00001" summary="first">
+      <created>1669330934200</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669330934200</updated>
+    </task>
+    <task id="LOCAL-00002" summary="first">
+      <created>1669331040294</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1669331040294</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -32,7 +32,9 @@ public class HibernateRunner {
 
             //session.delete(user);
             User user1 = session.get(User.class, "ivan@gmail.com");
+            User user2 = session.get(User.class, "ivan1@gmail.com");
             System.out.println(user1);
+            System.out.println(user2);
 
             session.getTransaction().commit();
         }
