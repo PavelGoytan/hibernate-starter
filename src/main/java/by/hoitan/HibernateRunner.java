@@ -4,6 +4,7 @@ import by.hoitan.converter.BirthdayConverter;
 import by.hoitan.entity.Birthday;
 import by.hoitan.entity.Role;
 import by.hoitan.entity.User;
+import by.hoitan.util.HibernateUtil;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
@@ -15,11 +16,8 @@ import java.time.LocalDate;
 
 public class HibernateRunner {
     public static void main(String[] args) {
-        Configuration configuration = new Configuration();
-        configuration.addAttributeConverter(new BirthdayConverter());
-        configuration.configure();
 
-        try(SessionFactory sessionFactory = configuration.buildSessionFactory();
+        try(SessionFactory sessionFactory = HibernateUtil.buildSessionFactory();
             Session session = sessionFactory.openSession()) {
             session.beginTransaction();
             User user = User.builder()
