@@ -15,6 +15,7 @@ import lombok.NoArgsConstructor;
 @Builder
 public class PersonalInfo {
 
+
     private String firstName;
     private String lastName;
     @Convert(converter = BirthdayConverter.class)
