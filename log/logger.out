@@ -1,2 +1,0 @@
-16:01:57.940 [main] INFO by.hoitan.HibernateRunner - User is in transient state, object User(userName=ivan3@gmail.com, firstName=Ivan, lastName=Ivanov, birthDate=Birthday[birthDate=2000-11-11], role=USER)
-16:01:59.868 [main] INFO by.hoitan.HibernateRunner - User is in persistent state, object User(userName=ivan3@gmail.com, firstName=Ivan, lastName=Ivanov, birthDate=Birthday[birthDate=2000-11-11], role=USER), sessionSessionImpl(1510543202<open>)
