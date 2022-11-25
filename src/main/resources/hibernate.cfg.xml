@@ -12,6 +12,7 @@
     <property name="show_sql">true</property>
     <property name="format_sql">true</property>
     <mapping class="by.hoitan.entity.User"></mapping>
+    <mapping class="by.hoitan.entity.Company"></mapping>
     <!-- <property name="connection.username"/> -->
     <!-- <property name="connection.password"/> -->
 

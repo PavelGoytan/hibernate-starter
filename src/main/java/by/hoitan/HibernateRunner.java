@@ -1,10 +1,7 @@
 package by.hoitan;
 
 
-import by.hoitan.entity.Birthday;
-import by.hoitan.entity.PersonalInfo;
-import by.hoitan.entity.Role;
-import by.hoitan.entity.User;
+import by.hoitan.entity.*;
 import by.hoitan.util.HibernateUtil;
 
 import org.hibernate.Session;
@@ -21,9 +18,12 @@ import java.time.LocalDate;
 public class HibernateRunner {
 
     public static void main(String[] args) {
+        Company company = Company.builder()
+                .name("Google")
+                .build();
 
         User user3 = User.builder()
-                .userName("petr3@gmail.com")
+                .userName("petr4@gmail.com")
                 .personalInfo(PersonalInfo.builder()
                         .firstName("Petr")
                         .lastName("Petrov")
@@ -36,6 +36,7 @@ public class HibernateRunner {
         try(SessionFactory sessionFactory = HibernateUtil.buildSessionFactory();
             Session session = sessionFactory.openSession()) {
             session.beginTransaction();
+            session.saveOrUpdate(company);
             session.saveOrUpdate(user3);
 
             //session.delete(user);
