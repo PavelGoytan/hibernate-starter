@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="417240e1-2128-4380-b0b5-fa0bdab4597f" name="Changes" comment="first">
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/hoitan/entity/Company.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/07358a3f-8b47-4490-a13f-1dc6f1c21131.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/07358a3f-8b47-4490-a13f-1dc6f1c21131.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/07358a3f-8b47-4490-a13f-1dc6f1c21131/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/07358a3f-8b47-4490-a13f-1dc6f1c21131/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/hoitan/HibernateRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/hoitan/HibernateRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/hoitan/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/hoitan/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-    </list>
+    <list default="true" id="417240e1-2128-4380-b0b5-fa0bdab4597f" name="Changes" comment="first" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,7 +100,7 @@
       <updated>1669228326913</updated>
       <workItem from="1669228328485" duration="6616000" />
       <workItem from="1669284801465" duration="7460000" />
-      <workItem from="1669372259754" duration="19527000" />
+      <workItem from="1669372259754" duration="19550000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1669330934200</created>
@@ -194,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669393683511</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="first">
+      <created>1669399005144</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1669399005144</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
