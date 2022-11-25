@@ -20,11 +20,8 @@ public class User {
 
     @Id
     private String userName;
-    private String firstName;
-    private String lastName;
-    @Convert(converter = BirthdayConverter.class)
-    @Column(name = "birthday")
-    private Birthday birthDate;
+    @AttributeOverride(name = "birthDate", column = @Column(name = "birthday"))
+    private PersonalInfo personalInfo;
     @Enumerated(EnumType.STRING)
     private Role role;
 

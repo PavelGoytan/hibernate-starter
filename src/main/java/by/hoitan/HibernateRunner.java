@@ -1,38 +1,45 @@
 package by.hoitan;
 
-import by.hoitan.converter.BirthdayConverter;
+
 import by.hoitan.entity.Birthday;
+import by.hoitan.entity.PersonalInfo;
 import by.hoitan.entity.Role;
 import by.hoitan.entity.User;
 import by.hoitan.util.HibernateUtil;
+
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import org.hibernate.cfg.Configuration;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.time.LocalDate;
 
+
+
 public class HibernateRunner {
+
     public static void main(String[] args) {
+
+        User user3 = User.builder()
+                .userName("petr3@gmail.com")
+                .personalInfo(PersonalInfo.builder()
+                        .firstName("Petr")
+                        .lastName("Petrov")
+                        .birthDate(new Birthday(LocalDate.of(2000, 12,1)))
+                        .build())
+                .role(Role.USER)
+                .build();
+
 
         try(SessionFactory sessionFactory = HibernateUtil.buildSessionFactory();
             Session session = sessionFactory.openSession()) {
             session.beginTransaction();
-            User user = User.builder()
-                    .userName("ivan2@gmail.com")
-                    .firstName("Ivan")
-                    .lastName("Ivanov")
-                    .birthDate(new Birthday(LocalDate.of(2000, 11, 11)))
-                    .role(Role.ADMIN)
-                    .build();
+            session.saveOrUpdate(user3);
 
             //session.delete(user);
-            User user1 = session.get(User.class, "ivan@gmail.com");
-            User user2 = session.get(User.class, "ivan1@gmail.com");
-            System.out.println(user1);
-            System.out.println(user2);
+
 
             session.getTransaction().commit();
         }

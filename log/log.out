@@ -1,0 +1,24 @@
+16:02:40 [main] INFO  Version:44 - HHH000412: Hibernate ORM core version 6.1.5.Final
+16:02:41 [main] WARN  pooling:77 - HHH10001002: Using built-in connection pool (not intended for production use)
+16:02:41 [main] INFO  pooling:136 - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+16:02:41 [main] INFO  pooling:158 - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+16:02:41 [main] INFO  pooling:167 - HHH10001001: Connection properties: {password=****, user=postgres}
+16:02:41 [main] INFO  pooling:171 - HHH10001003: Autocommit mode: false
+16:02:41 [main] INFO  pooling:363 - HHH10001115: Connection pool size: 20 (min=1)
+16:02:41 [main] INFO  SQL dialect:66 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+16:02:41 [main] WARN  deprecation:73 - HHH90000026: PostgreSQL95Dialect has been deprecated; use org.hibernate.dialect.PostgreSQLDialect instead
+16:02:42 [main] INFO  JtaPlatformInitiator:51 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+16:02:42 [main] INFO  pooling:605 - HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5432/postgres]
+16:10:01 [main] INFO  HibernateRunner:33 - User is in transient state, object User(userName=ivan3@gmail.com, firstName=Ivan, lastName=Ivanov, birthDate=Birthday[birthDate=2000-11-11], role=USER)
+16:10:01 [main] INFO  Version:44 - HHH000412: Hibernate ORM core version 6.1.5.Final
+16:10:02 [main] WARN  pooling:77 - HHH10001002: Using built-in connection pool (not intended for production use)
+16:10:02 [main] INFO  pooling:136 - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+16:10:02 [main] INFO  pooling:158 - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+16:10:02 [main] INFO  pooling:167 - HHH10001001: Connection properties: {password=****, user=postgres}
+16:10:02 [main] INFO  pooling:171 - HHH10001003: Autocommit mode: false
+16:10:02 [main] INFO  pooling:363 - HHH10001115: Connection pool size: 20 (min=1)
+16:10:02 [main] INFO  SQL dialect:66 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+16:10:02 [main] WARN  deprecation:73 - HHH90000026: PostgreSQL95Dialect has been deprecated; use org.hibernate.dialect.PostgreSQLDialect instead
+16:10:03 [main] INFO  JtaPlatformInitiator:51 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+16:10:03 [main] INFO  HibernateRunner:39 - User is in persistent state, object User(userName=ivan3@gmail.com, firstName=Ivan, lastName=Ivanov, birthDate=Birthday[birthDate=2000-11-11], role=USER), sessionSessionImpl(410033330<open>)
+16:10:03 [main] INFO  pooling:605 - HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5432/postgres]
