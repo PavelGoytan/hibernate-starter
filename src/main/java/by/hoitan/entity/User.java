@@ -19,6 +19,10 @@ public class User {
 
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @Column(unique = true)
     private String userName;
     @AttributeOverride(name = "birthDate", column = @Column(name = "birthday"))
     private PersonalInfo personalInfo;
