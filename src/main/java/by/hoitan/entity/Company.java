@@ -1,13 +1,10 @@
 package by.hoitan.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import jakarta.persistence.*;
+import lombok.*;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Data
 @Builder
@@ -19,4 +16,13 @@ public class Company {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String name;
+
+    @Builder.Default
+    @OneToMany(mappedBy = "company", cascade = CascadeType.ALL)
+    private List<User> users = new ArrayList<>();
+
+    public void addUser(User user){
+        users.add(user);
+        user.setCompany(this);
+    }
 }

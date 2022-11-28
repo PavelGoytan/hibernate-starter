@@ -2,12 +2,10 @@ package by.hoitan.entity;
 
 import by.hoitan.converter.BirthdayConverter;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Data
+@ToString(exclude = "company")
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
@@ -25,8 +23,10 @@ public class User {
     private PersonalInfo personalInfo;
     @Enumerated(EnumType.STRING)
     private Role role;
-    @ManyToOne
-    @JoinColumn(name = "company_id")
+   @ManyToOne(fetch = FetchType.EAGER)
+   @JoinColumn(name = "company_id")
     private Company company;
+   @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
+   private ProFile proFile;
 
 }
